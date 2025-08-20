@@ -1,0 +1,13 @@
+name: hello test
+
+on: [push]
+
+jobs:
+  build-test-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Log message
+        run: echo "Hello test"
+      - name: Log again
+        run: echo "Hello again"
